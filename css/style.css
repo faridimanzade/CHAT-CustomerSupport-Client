@@ -1,0 +1,194 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+/* ------------------------------- STARTER BUTTON ---------------------------- */
+
+.start-help {
+    background-color: rgb(41, 141, 49);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    border-radius: 10px;
+    padding: 2px 15px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    cursor: pointer;
+    /* visibility: hidden; */
+}
+
+.fa-expand-alt:hover {
+    color: black !important;
+    transition: all 0.3s;
+}
+
+/* ------------------------------- STARTER BUTTON ---------------------------- */
+
+img {
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+}
+
+
+.content {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-radius: 10px;
+    height: 900px;
+    visibility: hidden;
+}
+
+.mainAct {
+    background-color: darkgray;
+    border-radius: 10px 10px 0 0;
+}
+
+.header {
+    background-color: rgb(41, 141, 49);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 10px 30px;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+}
+
+.headerRight p {
+    margin: 10px !important;
+    font-weight: normal !important;
+}
+
+.headerRight:hover .deleteText,
+.headerRight:hover .fa-trash-alt {
+    color: black !important;
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.header p {
+    margin-left: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header .fa-comments {
+    font-size: 40px;
+}
+
+/* -------------------------------- INPUT GET PART --------------------------------- */
+
+.client-input {
+    background-color: rgb(50, 50, 50);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    width: 50%;
+}
+
+.fa-share {
+    font-size: 30px;
+}
+
+/* -------------------------------- CONVERSATION PART --------------------------------- */
+
+.conversationArea {
+    background-color: rgb(50, 50, 50);
+    height: 600px;
+    padding: 10px 30px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.helper {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    border-bottom: 1px solid rgb(80, 80, 80);
+    padding: 20px 0;
+}
+
+.helper-text {
+    margin-left: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.client {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    border-bottom: 1px solid rgb(80, 80, 80);
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+
+.client:hover,
+.helper:hover {
+    background-color: rgb(80, 80, 80);
+    transition: 0.3s;
+}
+
+.client-text {
+    margin-right: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.fa-share {
+    cursor: pointer;
+}
+
+.selected {
+    background-color: rgb(80, 80, 80);
+}
+
+.visibleTrash {
+    visibility: visible;
+    cursor: pointer;
+}
